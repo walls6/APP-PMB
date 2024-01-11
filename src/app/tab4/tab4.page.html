@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+     Data 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <body style="background: #8d8b8b;">
+  <ion-row *ngFor ="let tbl_calon_mahasiswa of MahasiswaDataBaru">
+    <ion-item-sliding>
+      <ion-item>
+        <div>
+          <p>{{tbl_calon_mahasiswa.nama}} <b>ASAL</b> {{tbl_calon_mahasiswa.asal_sekolah}}</p>
+        </div>
+      </ion-item>
+
+      <!-- <ion-item-options side ="end">
+        <ion-item-option color="primary" >
+       <ion-icon name="cash-outline"></ion-icon>
+        cek status
+        </ion-item-option> -->
+    
+    
+    <ion-item-option color="danger" (click)="deleteData(tbl_calon_mahasiswa.kd)">
+      <ion-icon name="trash-bin-outline"></ion-icon>
+        Delete
+        <!-- </ion-item-option> -->
+    <!-- </ion-item-options> -->
+    
+
+    <!-- </ion-item-sliding> -->
+  <!-- </ion-row> -->
+  <!-- </body> -->
+ 
+<!-- </ion-content> -->

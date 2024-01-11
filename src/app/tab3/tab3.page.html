@@ -1,0 +1,111 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="">
+</head>
+
+
+<ion-content [fullscreen]="true">
+  <div class="wrapper">
+    <div class="title">
+      Registration Form
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label>Nama Lengkap</label>
+          <input type="text" class="input" [(ngModel)]="nama" name="nama">
+       </div>  
+
+       <div class="inputfield">
+        <label>Jenis Kelamin</label>
+        <div class="custom_select"  >
+          <select  [(ngModel)]="jenis_kelamin" name="jenis_kelamin">
+            <option value="">Select</option>
+            <option value="L">Laki_laki</option>
+            <option value="P">Perempuan</option>
+          </select>
+        </div>
+         </div> 
+
+     <div class="inputfield">
+      <label>No.Hanphone</label>
+      <input type="text" class="input" [(ngModel)]="no_handphone" name="no_handphone">
+   </div> 
+
+   <div class="inputfield">
+    <label>Email</label>
+    <input type="text" class="input" [(ngModel)]="email" name="email" >
+ </div> 
+
+        <div class="inputfield">
+          <label>Asal sekolah</label>
+          <input type="text" class="input" [(ngModel)]="asal_sekolah" name="asal_sekolah">
+       </div>  
+ 
+       <div class="inputfield">
+        <label>Program Studi</label>
+        <div class="custom_select" >
+          <select [(ngModel)]="studi"  name="studi">
+            <option value="">Select</option>
+            <option value="TI">Teknik Informatika (TI)</option>
+            <option value="Si">Sistem Informasi (SI)</option>
+            <option value="Tekin">Teknologi Informasi (Tekin)</option>
+          </select>
+        </div>
+         </div> 
+
+         <div class="inputfield">
+          <label>Jenjang</label>
+          <div class="custom_select"  >
+            <select [(ngModel)]="jenjang"  name="jenjang">
+              <option value="">Select</option>
+              <option value="S1">Sarjana(S1)</option>
+              <option value="D1">Diploma(D1)</option>
+              <option value="D3">Diploma(D3)</option>
+            </select>
+          </div>
+           </div> 
+
+           
+         <div class="inputfield">
+          <label>Kelas</label>
+          <div class="custom_select" >
+            <select [(ngModel)]="kelas" name="kelas">
+              <option value="">Select</option>
+              <option value="A">Kelas A</option>
+              <option value="B">Kelas B</option>
+              <option value="C">Kelas c</option>
+            </select>
+          </div>
+           </div> 
+
+           <div class="inputfield">
+            <label>Informasi Kampus</label>
+            <div class="custom_select"  >
+              <select [(ngModel)]="info" name="info">
+                <option value="">Select</option>
+                <option value="Mahasiswa">Mahasiswa Kampus</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Website">Website</option>
+              </select>
+            </div>
+             </div>            
+
+      <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <p>Apakah anda yakin ingin daftar?</p>
+       </div> 
+      <div class="inputfield">
+        <button class="btn btn-primary btn-block" (click)="addData()" expand="full" color="primary">Daftar</button>
+      </div>
+    </div>
+</div>
+
+</ion-content>

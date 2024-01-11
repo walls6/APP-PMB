@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>fee</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+    <body>
+      <section class="intro">
+        <div class="gradient-custom-1 h-100">
+          <div class="mask d-flex align-items-center h-100">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="table-responsive bg-white">
+                    <table class="table mb-0">
+                      <thead>
+                        <tr>
+                          
+                          <th scope="col">Nama</th>
+                          <th scope="col">status</th>
+                          <th scope="col">fee</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor ="let fee of MahasiswaDataBaru" style="color: #666666;">
+                          <!-- <th scope="row"></th> -->
+                          <td>{{fee.nama}}</td>
+                          <td>{{fee.status}}</td>
+                          <td>{{fee.jumlah_fee}}</td>
+                        </tr>
+                        <button type="button" name="button" class="btn login_btn" (click)="back()">back</button>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </body>
+
+</ion-content>
